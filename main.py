@@ -216,3 +216,7 @@ class AIArtApp(ctk.CTk):
         if self.generated_image:
             path = filedialog.asksaveasfilename(defaultextension=".png", filetypes=[("PNG", "*.png")])
             if path: self.generated_image.save(path)
+
+if __name__ == "__main__":
+    app = AIArtApp()
+    app.mainloop()
